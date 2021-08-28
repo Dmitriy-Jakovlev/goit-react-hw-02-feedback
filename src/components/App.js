@@ -12,11 +12,13 @@ class App extends Component {
         bad: 0
     };
 
-    handleFeedback = ({ target }) => {
-        const { feedback } = target.dataset
-        this.setState(prevState => ({ [feedback]: prevState[feedback] + 1 }))
-        
-    }
+    handleFeedback = e => {
+    const name = e.target.name;
+    this.setState(state => ({
+      ...state,
+      [name]: this.state[name] + 1
+    }));
+  };
 
     countTotalFeedback = () => {
         const { good, neutral, bad } = this.state
