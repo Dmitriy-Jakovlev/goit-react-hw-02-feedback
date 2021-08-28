@@ -3,7 +3,6 @@ import Section from './Section';
 import FeedbackOptions from './FeedbackOptions';
 import Statistics from './Statistics';
 import styles from './App.module.css'
-// import Notification from './Notification/Notification';
 import { FEEDBACK_OPTIONS } from './FeedbackOptions/constans';
 
 class App extends Component {
